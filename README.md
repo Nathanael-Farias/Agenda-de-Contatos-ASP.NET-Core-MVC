@@ -83,6 +83,3 @@ Este projeto consiste em uma **aplicação web MVC** que permite o gerenciamento
 
 Sinta-se à vontade para abrir **issues** e **pull requests** para melhorias no projeto!
 
-## Licença
-
-Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
