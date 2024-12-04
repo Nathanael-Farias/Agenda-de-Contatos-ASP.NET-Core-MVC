@@ -9,10 +9,11 @@ Este projeto consiste em uma **aplicação web MVC** que permite o gerenciamento
 ## Funcionalidades
 
 - **CRUD de Contatos**: 
-  - Criar: Adiciona novos contatos.
-  - Editar: Atualiza informações de um contato.
-  - Deletar: Exclui contatos da lista.
-  - Detalhes: Exibe informações detalhadas de um contato.
+  - **Create**: Adiciona novos contatos.
+  - **Read**: Exibe a lista de contatos ou detalhes de um contato específico.
+  - **Update**: Atualiza informações de um contato.
+  - **Delete**: Exclui contatos da lista.
+  
 - **Interface Responsiva**: Utiliza o Bootstrap para garantir uma interface adaptável a diferentes dispositivos.
 
 ## Tecnologias Utilizadas
@@ -34,9 +35,6 @@ Este projeto consiste em uma **aplicação web MVC** que permite o gerenciamento
 1. Clone este repositório:
    ```bash
    git clone https://github.com/seu-usuario/nome-do-repositorio.git
-
-    ```
-
 2. Navegue até o diretório do projeto:
     ```bash
     cd nome-do-repositorio
@@ -47,7 +45,7 @@ Este projeto consiste em uma **aplicação web MVC** que permite o gerenciamento
     dotnet restore
     ```
 
-4. Atualize a conexão com o banco de dados em `appsettings.json` com as credenciais do seu SQL Server.
+4. Atualize a string de conexão no arquivo `appsettings.json` com as credenciais do seu SQL Server.
 
 5. Crie e aplique a migração do banco de dados:
     ```bash
@@ -56,32 +54,29 @@ Este projeto consiste em uma **aplicação web MVC** que permite o gerenciamento
 
 6. Execute o projeto:
     ```bash
-    dotnet run
+    dotnet run ou dotnet watch run
     ```
 
-7. Abra o navegador e acesse a URL:
-    ```
-    http://localhost:5000
-    ```
+
 
 ## Estrutura do Projeto
 
-- **Controllers**: Contém os controladores (ações) para manipulação de contatos.
-  - `ContatoController.cs`: Controlador responsável pelas operações CRUD de contatos.
+- **Controllers**: Contém os controladores responsáveis pela lógica de manipulação das operações CRUD.
+  - `ContatoController.cs`: Controlador que gerencia as operações CRUD de contatos.
   
 - **Models**: Contém as classes que representam as entidades do banco de dados.
-  - `Contato.cs`: Classe que define a estrutura do modelo de dados de um contato.
+  - `Contato.cs`: Define o modelo de dados de um contato.
 
-- **Views**: Contém as páginas (visões) que o usuário vê no navegador.
-  - `Index.cshtml`: Lista os contatos.
+- **Views**: Contém as páginas (views) que são renderizadas para o usuário no navegador.
+  - `Index.cshtml`: Exibe a lista de contatos.
   - `Criar.cshtml`: Formulário para adicionar um novo contato.
   - `Editar.cshtml`: Formulário para editar um contato existente.
-  - `Detalhes.cshtml`: Exibe detalhes de um contato específico.
-  - `Deletar.cshtml`: Exibe confirmação de exclusão de um contato.
+  - `Detalhes.cshtml`: Exibe as informações detalhadas de um contato específico.
+  - `Deletar.cshtml`: Exibe a página de confirmação de exclusão de um contato.
 
 ## Contribuições
 
-Sinta-se à vontade para abrir **issues** e **pull requests** !
+Sinta-se à vontade para abrir **issues** e **pull requests**!
 
 
 ## Imagens do Projeto
