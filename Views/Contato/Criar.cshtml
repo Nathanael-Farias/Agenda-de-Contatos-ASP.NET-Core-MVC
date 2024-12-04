@@ -1,38 +1,74 @@
 @model ProjetoMVC_DIO.Models.Contato
 
 @{
-    ViewData["Title"]= "Cria novo contato";
+    ViewData["Title"] = "Criar novo contato";
 }
 
-<h1>Criar novo contato</h1>
+<h1 class="text-center text-light">Criar novo contato</h1>
 
-<hr/>
+<hr class="border-light"/>
 
-<div class="Row">
-    <div class="col-md-4">
-        <form asp-action="Criar">
-            <div class="form-group">
-                <label asp-for="Nome" class="control-label"></label>
-                <input asp-for="Nome" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label asp-for="Telefone" class="control-label"></label>
-                <input asp-for="Telefone" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label asp-for="Ativo" class="control-label"></label>
-                <input type="checkbox" asp-for="Ativo" class="form-check-input" />
-            </div>
-            <br>
-            <div class="form-group">
-                <input type="submit" value="Criar" class="btn btn-primary"/>
-            </div>
-        </form>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Criar" class="bg-purple p-4 rounded shadow-sm">
+                <div class="form-group mb-3">
+                    <label asp-for="Nome" class="form-label text-light"></label>
+                    <input asp-for="Nome" class="form-control form-control-lg" placeholder="Digite o nome" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Telefone" class="form-label text-light"></label>
+                    <input asp-for="Telefone" class="form-control form-control-lg" placeholder="Digite o telefone" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Ativo" class="form-label text-light"></label>
+                    <input type="checkbox" asp-for="Ativo" class="form-check-input" />
+                    
+                </div>
+
+                <div class="form-group d-flex justify-content-between">
+                    <input type="submit" value="Criar" class="btn btn-lg btn-primary w-100" />
+                </div>
+            </form>
+        </div>
     </div>
 </div>
-</hr>
-</br>
 
-<div>
-    <a asp-action="Index">Voltar</a>
+<br>
+<div class="text-center">
+    <a asp-action="Index" class="btn btn-outline-light">Voltar</a>
 </div>
+
+<style>
+    body {
+        background-color: #5b2c6f;
+    }
+
+    h1 {
+        color: #f4f4f4;
+    }
+
+    .bg-purple {
+        background-color: #6a1b9a;
+    }
+
+    .form-control {
+        border-radius: 0.375rem;
+    }
+
+    .form-label {
+        font-weight: bold;
+    }
+
+    .btn-primary {
+        background-color: #9b4d96;
+        border-color: #9b4d96;
+    }
+
+    .btn-outline-light {
+        color: #f4f4f4;
+        border-color: #f4f4f4;
+    }
+</style>

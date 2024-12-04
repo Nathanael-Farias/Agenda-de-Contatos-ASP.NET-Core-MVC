@@ -1,21 +1,35 @@
 /* _content/ProjetoMVC-DIO/Views/Shared/_Layout.cshtml.rz.scp.css */
-/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
 a.navbar-brand[b-zo0cfchfti] {
   white-space: normal;
   text-align: center;
-  word-break: break-all;
+  word-break: break-word;
+  font-weight: bold;
+  color: #1b6ec2;
 }
 
 a[b-zo0cfchfti] {
   color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover[b-zo0cfchfti] {
+  color: #1b6ec2;
+  text-decoration: underline;
 }
 
 .btn-primary[b-zo0cfchfti] {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover[b-zo0cfchfti] {
+  background-color: #1861ac;
+  border-color: #174d8c;
 }
 
 .nav-pills .nav-link.active[b-zo0cfchfti], .nav-pills .show > .nav-link[b-zo0cfchfti] {
@@ -24,26 +38,54 @@ a[b-zo0cfchfti] {
   border-color: #1861ac;
 }
 
-.border-top[b-zo0cfchfti] {
-  border-top: 1px solid #e5e5e5;
+.nav-pills .nav-link[b-zo0cfchfti] {
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
-.border-bottom[b-zo0cfchfti] {
-  border-bottom: 1px solid #e5e5e5;
+
+.nav-pills .nav-link:hover[b-zo0cfchfti] {
+  background-color: #1861ac;
+}
+
+.border-top[b-zo0cfchfti], .border-bottom[b-zo0cfchfti] {
+  border-color: #e5e5e5;
 }
 
 .box-shadow[b-zo0cfchfti] {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 button.accept-policy[b-zo0cfchfti] {
   font-size: 1rem;
-  line-height: inherit;
+  line-height: 1.5;
+  padding: 0.5rem 1rem;
+  background-color: #1b6ec2;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.accept-policy:hover[b-zo0cfchfti] {
+  background-color: #1861ac;
 }
 
 .footer[b-zo0cfchfti] {
   position: absolute;
   bottom: 0;
   width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.footer a[b-zo0cfchfti] {
+  color: #0077cc;
+}
+
+.footer a:hover[b-zo0cfchfti] {
+  color: #1b6ec2;
 }

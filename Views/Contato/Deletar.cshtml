@@ -1,0 +1,84 @@
+@model ProjetoMVC_DIO.Models.Contato
+
+@{
+    ViewData["Title"] = "Deletar Contato";
+}
+
+<h1 class="text-center text-light">Deletar Contato</h1>
+
+<hr class="border-light"/>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h3 class="text-danger text-center">Você tem certeza que deseja excluir o contato?</h3>
+
+            <dl class="row">
+                <dt class="col-sm-4 text-light">
+                    @Html.DisplayNameFor(x => x.Nome)
+                </dt>
+                <dd class="col-sm-8 text-light">
+                    @Html.DisplayFor(x => x.Nome)
+                </dd>
+
+                <dt class="col-sm-4 text-light">
+                    @Html.DisplayNameFor(x => x.Telefone)
+                </dt>
+                <dd class="col-sm-8 text-light">
+                    @Html.DisplayFor(x => x.Telefone)
+                </dd>
+
+                <dt class="col-sm-4 text-light">
+                    @Html.DisplayNameFor(x => x.Ativo)
+                </dt>
+                <dd class="col-sm-8 text-light">
+                    @Html.DisplayFor(x => x.Ativo)
+                </dd>
+            </dl>
+
+            <form asp-action="DeletarConfirmado" method="post" class="bg-purple p-4 rounded shadow-sm">
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group d-flex justify-content-between">
+                    <input type="submit" value="Deletar" class="btn btn-lg btn-danger w-100" />
+                    <a asp-action="Index" class="btn btn-outline-light w-100">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #5b2c6f;
+    }
+
+    h1, h3 {
+        color: #f4f4f4;
+    }
+
+    .bg-purple {
+        background-color: #6a1b9a;
+    }
+
+    .form-control, .btn {
+        border-radius: 0.375rem;
+    }
+
+    .btn-danger {
+        background-color: #c62828;
+        border-color: #c62828;
+    }
+
+    .btn-outline-light {
+        color: #f4f4f4;
+        border-color: #f4f4f4;
+    }
+
+    .text-light {
+        color: #f4f4f4;
+    }
+
+    .text-danger {
+        color: #e53935;
+    }
+</style>
