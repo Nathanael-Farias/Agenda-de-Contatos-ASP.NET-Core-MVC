@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoMVC-DIO", "ProjetoMVC-DIO.csproj", "{1F692858-5064-4AA4-9D0D-07E3F3DECA30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoMVC", "ProjetoMVC.csproj", "{1F692858-5064-4AA4-9D0D-07E3F3DECA30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
