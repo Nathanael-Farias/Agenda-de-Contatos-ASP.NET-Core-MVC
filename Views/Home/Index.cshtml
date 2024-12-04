@@ -10,6 +10,7 @@
 <style>
     body {
         background-color: #5e35b1;
+        font-family: 'Arial', sans-serif;
     }
 
     .text-center {
@@ -26,5 +27,17 @@
     p.lead {
         font-size: 1.25rem;
         color: #f1f1f1;
+    }
+
+    .text-center h1, .text-center p {
+        transition: transform 0.3s ease;
+    }
+
+    .text-center:hover h1 {
+        transform: scale(1.1);
+    }
+
+    .text-center:hover p {
+        transform: scale(1.05);
     }
 </style>

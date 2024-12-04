@@ -7,20 +7,90 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ProjetoMVC_DIO.styles.css" asp-append-version="true" />
+    <style>
+        body {
+            background-color: #5e35b1;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #8e24aa;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #f4f4f4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar {
+            background-color: #6a1b9a;
+            border-bottom: 2px solid #8e24aa;
+        }
+
+        .navbar-brand, .nav-link {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .navbar-brand:hover, .nav-link:hover {
+            color: #f4f4f4;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #fff;
+        }
+
+        .navbar-collapse {
+            justify-content: flex-end;
+        }
+
+        .container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .navbar-nav .nav-item + .nav-item {
+            margin-left: 15px;
+        }
+
+        h1, .lead {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container-fluid {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
-<body style="background-color: #5e35b1; color: #fff; display: flex; flex-direction: column; height: 100vh; margin: 0;">
+<body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-primary border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand text-light" asp-area="" asp-controller="Home" asp-action="Index">Testes Mvc & Crud</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Início</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a>
@@ -33,17 +103,19 @@
             </div>
         </nav>
     </header>
-    <div class="container" style="flex: 1;">
+
+    <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted" style="background-color: #8e24aa;">
-        <div class="container">
+    <footer class="footer text-muted">
+        <div class="container text-center">
             &copy; 2024 - TestesMvcCrud - <a class="text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
