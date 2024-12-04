@@ -1,0 +1,49 @@
+@model IEnumerable<ProjetoMVC_DIO.Models.Contato>
+
+@{
+    ViewData["Title"] = "Listagem de Contatos";
+}
+
+<h2>Contatos</h2>
+
+<p>
+    <a asp-action="Criar">Novo Contato</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Telefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Ativo)
+            </th>
+            <th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th>@Html.DisplayFor(model => item.Id)</th>
+                <th>@Html.DisplayFor(model => item.Nome)</th>
+                <th>@Html.DisplayFor(model => item.Telefone)</th>
+                <th>@Html.DisplayFor(model => item.Ativo)</th>
+                <th>
+                <a asp-action="Editar" asp-route-itemid="@item.Id">Editar</a>&nbsp;&nbsp;
+                <a asp-action="Detalhes" asp-route-itemid="@item.Id">Detalhes</a>&nbsp;&nbsp;
+                <a asp-action="Deletar" asp-route-itemid="@item.Id">Deletar</a>
+            </th>
+
+            </tr>
+        }
+    </tbody>
+</table>

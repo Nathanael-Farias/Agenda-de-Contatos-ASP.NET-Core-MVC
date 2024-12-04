@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ProjetoMVC-DIO.props" />
+</Project>
