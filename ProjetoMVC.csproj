@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>ProjetoMVC_DIO</RootNamespace>
+    <RootNamespace>ProjetoMVC</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
