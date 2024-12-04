@@ -81,5 +81,5 @@ Este projeto consiste em uma **aplicação web MVC** que permite o gerenciamento
 
 ## Contribuições
 
-Sinta-se à vontade para abrir **issues** e **pull requests** para melhorias no projeto!
+Sinta-se à vontade para abrir **issues** e **pull requests** !
 
