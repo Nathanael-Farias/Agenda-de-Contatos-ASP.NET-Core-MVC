@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjetoMVC-DIO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+171e247872453f4416a813581c2a6bc309be9506")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+728c2cf2397f2b2a5512a63601905c682f7d9750")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjetoMVC-DIO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjetoMVC-DIO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

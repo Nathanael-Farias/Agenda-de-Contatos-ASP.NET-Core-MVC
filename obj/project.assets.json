@@ -4708,11 +4708,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\progamations\\ProjetoMVC-DIO\\ProjetoMVC-DIO.csproj",
+      "projectUniqueName": "d:\\progamations\\ProjetoMVC\\ProjetoMVC-DIO.csproj",
       "projectName": "ProjetoMVC-DIO",
-      "projectPath": "D:\\progamations\\ProjetoMVC-DIO\\ProjetoMVC-DIO.csproj",
+      "projectPath": "d:\\progamations\\ProjetoMVC\\ProjetoMVC-DIO.csproj",
       "packagesPath": "C:\\Users\\Nathanael\\.nuget\\packages\\",
-      "outputPath": "D:\\progamations\\ProjetoMVC-DIO\\obj\\",
+      "outputPath": "d:\\progamations\\ProjetoMVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

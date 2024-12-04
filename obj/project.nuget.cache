@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7lp8aZQQzCI=",
+  "dgSpecHash": "u6zr4SXIOCg=",
   "success": true,
-  "projectFilePath": "D:\\progamations\\ProjetoMVC-DIO\\ProjetoMVC-DIO.csproj",
+  "projectFilePath": "D:\\progamations\\ProjetoMVC\\ProjetoMVC-DIO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nathanael\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Nathanael\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
