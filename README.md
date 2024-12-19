@@ -79,19 +79,6 @@ Este projeto consiste em uma **aplicação web MVC** que permite o gerenciamento
 Sinta-se à vontade para abrir **issues** e **pull requests**!
 
 
-## Imagens do Projeto
-
-![Tela Seja Bem-Vindo](imgs/Tela-Seja-Bem-Vindo.png)
-![Tela Seja Bem-Vindo Mobile](imgs/BemVindoMobile.png)
-![Tela de Contatos](imgs/Contatos.png)
-![Tela de Contatos Mobile](imgs/ContatosMobile.png)
-![Tela de Novo Contato](imgs/Novo-Contato.png)
-![SQL Database](imgs/sql.png)
-![Tela de Detalhes](imgs/Detalhes.png)
-![Tela de Edição](imgs/Editar.png)
-![Tela de Exclusão](imgs/Excluir.png)
-
-
 
 
 
